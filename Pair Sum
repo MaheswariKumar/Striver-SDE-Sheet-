@@ -1,0 +1,15 @@
+from os import *
+from sys import *
+from collections import *
+from math import *
+
+def pairSum(arr, s):
+    res = []
+    n = len(arr)
+    for i in range(n-1):
+        for j in range(i+1, n):
+            if arr[j] + arr[i] == s:
+                c = arr[i], arr[j]
+                res.append(sorted(c))
+    return sorted(res)
+    pass
