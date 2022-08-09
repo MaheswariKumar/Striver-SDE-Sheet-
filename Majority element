@@ -1,0 +1,22 @@
+from os import *
+from sys import *
+from collections import *
+from math import *
+
+def findMajorityElement(arr, n):
+    d = {}
+    for i in arr:
+        if i not in d:
+            d[i] = 1
+        else:
+            d[i] += 1
+    ans = []
+    for a in arr:
+        if d[a] > n//2:
+            ans.append(a)
+            
+    if ans:
+        return ans[0]
+    else:
+        return -1
+pass
