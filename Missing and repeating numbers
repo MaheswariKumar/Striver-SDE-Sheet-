@@ -1,0 +1,21 @@
+from os import *
+from sys import *
+from collections import *
+from math import *
+
+def missingAndRepeating(arr, n):
+    lst = []
+    res = []
+    for i in range(1, n+1):
+        if i not in arr:
+            lst.append(i)
+            
+    for i in arr:
+        if i not in res:
+            res.append(i)
+        else:
+            lst.append(i)
+            
+    return lst
+        
+pass
