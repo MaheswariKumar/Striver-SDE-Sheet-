@@ -1,0 +1,6 @@
+def sortStack(stack):
+    # given data structure is a python list 
+    # as list have all the similar operations available so use them
+    # Write your code here
+    
+    return stack.sort()
